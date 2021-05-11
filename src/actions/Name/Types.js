@@ -1,0 +1,2 @@
+export const SET_CURRENT_FIRSTNAME = 'FETCH_POSTS';
+export const SET_CURRENT_LASTNAME = 'NEW_POST';
