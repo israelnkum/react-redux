@@ -1,4 +1,4 @@
-import { BOY_NAMES } from '../constants';
+import { BOY_NAMES, GIRL_NAMES } from '../constants';
 
 const BabyNameGenerator = (isBoy, char = null) => {
 
@@ -18,11 +18,11 @@ const BabyNameGenerator = (isBoy, char = null) => {
             return pickRandomName(BOY_NAMES[char])
         }
     } else {
-        // if (char === null) {
-        //     return pickRandomName(GIRL_NAMES[pickRandomLetter(GIRL_NAMES)])
-        // } else {
-        //     return pickRandomName(GIRL_NAMES[char])
-        // }
+        if (char === null) {
+            return pickRandomName(GIRL_NAMES[pickRandomLetter(GIRL_NAMES)])
+        } else {
+            return pickRandomName(GIRL_NAMES[char])
+        }
     }
 }
 
